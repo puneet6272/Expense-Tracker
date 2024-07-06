@@ -42,19 +42,15 @@ hr {
 }
 
 
-
-
-
 body {
   font-family: "popines", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   // min-height: 90vh;
-  height: 95h;
+  height: 96vh;
   background: #1a1e23;
 }
-
 
 .container {
   background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
@@ -167,7 +163,7 @@ body {
     }
 
     .history-box {
-      height: 25rem;
+      height: 22rem;
       overflow: hidden;
 
       &:hover {
