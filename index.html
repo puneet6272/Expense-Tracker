@@ -19,66 +19,14 @@
 </head>
 
 <body>
-    <div class="bubbles ">
-        <div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-        </div>
+    <div class="container">
 
 
-        <div class="container">
+        <!-- balance &  income and expense container  -->
 
+        <header>
             <h1 class="expense_title"> Expense tracker</h1>
 
-            <!-- balance  -->
             <div class="cen">
                 <div class="balance">
                     <h1 id="balance"></h1>
@@ -86,7 +34,6 @@
                 </div>
             </div>
 
-            <!-- income and expense container -->
             <div class="inc-exp-container">
                 <div class="income">
                     <h2 id="income">$ 00.0 <i class="fa-solid fa-sort-up"></i></h2>
@@ -97,38 +44,50 @@
                     <h4>Expense</h4>
                 </div>
             </div>
+        </header>
 
-            <!-- history -->
+
+
+        <!-- history -->
+        <main>
             <div class="history">
                 <h2 class="title-history">History</h2>
                 <ul class="history-box" id="list">
                     <li class="plus">
                         <h4>Payments</h4>
-                        <span>+$100
-                            <i class="fa-solid fa-sort-up"></i>
-                            <i class="fa-solid fa-trash"></i>
+                        <span id="display_date" placeholder="-MM-YYYY" required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}">
+                            2/5/24
+                        </span>
+                        <span id="price">+$100
+                            <!-- <i class="fa-solid fa-sort-up" ></i> -->
+                            <i class="fa-solid fa-trash" id="dlt_icon"></i>
+                            <i class="fa-solid fa-pen-to-square" id="edit_icon"></i>
                         </span>
                     </li>
                 </ul>
             </div>
+        </main>
 
 
-            <!-- Add Transaction section -->
-
-            <hr>
+        <!-- Add Transaction section -->
+        <footer>
             <div class="transcation">
                 <h2 class="transaction-title">Add new transaction</h2>
 
                 <form action="#" class="transection-form" id="form">
+                    <div class="input-section">
+                        <input type="text" id="text" class="inp-text" placeholder="Enter text here">
+                        <input type="number" id="amount" class="inp-number" placeholder="Enter amount (-100 expense)">
+                    </div>
+                    <input type="date" name="" id="date">
 
-                    <input type="text" id="text" class="inp-text" placeholder="Enter text here">
-                    <input type="number" id="amount" class="inp-number" placeholder="Enter amount">
-                    <button class="button-27" role="button">Add Transection</button>
+
+                    <button class="button-27" id="btn" role="button">Add Transection</button>
 
                 </form>
             </div>
+        </footer>
 
-        </div>
     </div>
 
     <script src="main.js"></script>
