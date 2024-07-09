@@ -47,7 +47,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background: #1a1e23;
 
 }
@@ -58,7 +58,7 @@ body {
   width: 80rem;
   padding: 1.5rem;
   box-shadow: rgba(15, 14, 14, 0.24) 0px 3px 8px;
-  height: 90vh;
+  min-height: 90vh;
   border-radius: 1rem;
   display: grid;
   grid-template-rows: 30% 45% 28%;
@@ -253,8 +253,6 @@ body {
         flex-direction: column;
 
         .input-section {
-
-          // border: 2px solid red;
           input {
             border-radius: 1rem;
             padding: 2rem;
